@@ -1,8 +1,8 @@
 
-function newItem() {
+
 
   // 1.  Adding a new item using jQuery:
-
+function newItem() {
   let list = $('#list');
   let inputValue = $('#input').val();
   let li = $('<li></li>');
@@ -30,9 +30,10 @@ function newItem() {
   let crossOutButton = $('<crossOutButton></crossOutButton>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
+  
   crossOutButton.on("click", deleteListItem);
   function deleteListItem() {
-    li.addClass("delete");
+    li.addClass("delete")
   }
 
 
